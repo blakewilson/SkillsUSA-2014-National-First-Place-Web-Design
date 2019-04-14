@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+<!--These are the keyworkds requested by the client for SEO, they will help get attention to the page when searched for.!-->
+<meta name="keywords" content="STEM, Science, Technology, Engineering, Math, STEAMIE to include art, innovation, Entrepreneurship" />
+<!--This is for display on mobile devices. Mobile Friendly Sites = Very Happy Users !-->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Home | Web Design Contest</title>
+</head>
+<body>
+	<!-- These are the divs for the header. It calls for the logos and the navigation !-->
+    <div id="header" class="main-navigation">
+    	<div class="inner">
+            <div id="logo" class="site-logo">
+                <a href="index.html" title="Home"><img src="assets/img/logo.png" /></a>
+            </div>
+            <div id="navigation" class="main-navigation">
+                <ul>
+                    <li><a href="index.html" title="Home" >Home</a></li>
+                    <li><a href="about.html" title="About">About</a></li>
+                    <li><a href="blog.html" title="Blog" >Blog</a></li>
+                    <li class="current"><a href="contact.html" title="Contact">Contact</a></li>
+                </ul>
+            </div>
+            <select>
+            	<option value="home.html">Home</option>
+                <option value="about.html">About</option>
+                <option value="blog.html">Blog</option>
+                <option value="contact.html">Contact</option>
+            </select>
+        </div>
+    </div>
+    <!-- This is the start of the contact form. Additional fields may be added here and this is also where the javascript is called to for validation. -->
+    <div id="content">
+    	<img src="assets/img/contactbanner.png" />
+    	<h1 class="content-title">Your Comments...</h1>
+    	<div id="primary" class="primary-content">
+        <h1>Thank You</h1>
+        <p>Your form has been posted and is awaiting review (not)</p>
+        <form name="contactform" onsubmit="return validateForm()" method="post">
+		<div class="contact-field">
+            <div id="error-fname">You must fill out your first name!</div>
+                First Name:<br /><input type="text" name="fname">
+        </div>
+        
+        <div class="contact-field">
+        <div id="error-lname">You must fill out your last name!</div>
+        	Last Name:<br /><input type="text" name="lname">
+        </div>
+        
+        <div class="contact-field">
+        <div id="error-email">You must fill out your email!</div>
+        	Email:<br /><input type="text" name="email">
+        </div>
+        <!-- This is for the drop down selection on the contact page. You can select one, whichever one you may be. The client did not ask for it 			        to be validated, so users may choose to not answer this field !-->
+        <div class="contact-field">
+        Please select:<br />
+        <select>
+        		<option value="Please Select">Please Select...</option>
+            	<option value="Education Policy Maker">Education Policy Maker</option>
+                <option value="Student">Student</option>
+                <option value="Parent">Parent</option>
+                <option value="Educator">Educator</option>
+                <option value="Industry Affiliate">Industry Affiliate</option>
+        </select>
+        </div>
+        <div class="contact-field">
+        <div id="error-subject">You must have a subject!</div>
+        	Subject:<br /><input type="text" name="subject">
+        </div>
+        
+        <div class="contact-field">
+        <div id="error-message">Please fill out your comments..</div>
+        	Your Comments:<br /><textarea type="text" name="message"></textarea>
+        </div>
+        <input type="submit" value="Submit">
+        </form>
+        </div>
+    </div>
+    <!-- End of contact form !-->
+    <!-- Start of footer !-->
+    <div id="footer" class="site-footer">
+    	<div id="footer-navigation" class="footer-nav">
+                <ul>
+                    <li><a href="#" title="Home">Home</a></li>
+                    <li><a href="about.html" title="About">About</a></li>
+                    <li><a href="blog.html" title="Blog" >Blog</a></li>
+                    <li><a href="contact.html" title="Contact">Contact</a></li>
+                </ul>
+            </div>
+            <p>Copyright &copy; 2014 Web Design Contest. All Rights Reserved.</p>
+    </div>
+    <!-- End of footer !-->
+ <!--This call for javascript is for the contact form, it validates the form to make sure mean spammers don't get a free pass !-->   
+<script type="text/javascript" src="assets/js/contact.js"></script>
+<!--This call for javascript is for the smooth header transition. When the page scrolls past a certain point, the header grabs ahold to the top of the page and will transition. !-->
+<script type="text/javascript" src="assets/js/global.js"></script>
+</body>
+</html>
